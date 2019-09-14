@@ -14,5 +14,10 @@ namespace Onion.ApplicationServices.Route
 
             return 10;
         }
+
+        public bool InAirportZone(GeoCoordinate start, GeoCoordinate end)
+        {
+            return false;
+        }
     }
 }

@@ -24,7 +24,18 @@ namespace Onion.DomainServices.Fare
             estimate += model.Flagfall;
             estimate += (model.Tariff * distance);
 
+            estimate = ApplyAirportLevy(estimate, model.AirportLevy, start, end); 
+
             return estimate;
+        }
+
+        private decimal ApplyAirportLevy(decimal fare, decimal airportLevy, GeoCoordinate start, GeoCoordinate end)
+        {
+            bool isAirportTrip = routeService.InAirportZone(start, end);
+
+            return isAirportTrip
+                ? fare += airportLevy
+                : fare;
         }
     }
 }
