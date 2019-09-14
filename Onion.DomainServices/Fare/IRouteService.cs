@@ -1,10 +1,12 @@
-﻿using System;
+﻿using Onion.Core;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Onion.DomainServices.Fare
 {
-    interface IRouteService
+    public interface IRouteService
     {
+        decimal CalculateDistance(GeoCoordinate start, GeoCoordinate end);
     }
 }

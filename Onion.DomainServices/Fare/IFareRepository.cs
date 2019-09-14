@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Onion.Core;
+using Onion.Core.Fare;
 
 namespace Onion.DomainServices.Fare
 {
-    interface IFareRepository
+    public interface IFareRepository
     {
+        FareModel GetFareModel(GeoCoordinate start);
     }
 }

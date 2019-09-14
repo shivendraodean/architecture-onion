@@ -2,6 +2,6 @@
 {
     public interface IRiderFareCalculator
     {
-        decimal EstimateFare(FareModel model, decimal distance);
+        decimal EstimateFare(GeoCoordinate start, GeoCoordinate end);
     }
 }

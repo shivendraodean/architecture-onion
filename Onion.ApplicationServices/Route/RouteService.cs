@@ -1,10 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Onion.Core;
+using Onion.DomainServices.Fare;
+using System;
 
 namespace Onion.ApplicationServices.Route
 {
-    public class RouteService
+    public class RouteService : IRouteService
     {
+        public decimal CalculateDistance(GeoCoordinate start, GeoCoordinate end)
+        {
+            /*  Distance calculation is obscured for the sake of brevity.
+                Typically this would involve geospatial and mathematical algorithms,
+                and/or the use of an external library such as Google Maps */
+
+            return 10;
+        }
     }
 }
