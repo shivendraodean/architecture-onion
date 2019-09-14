@@ -3,17 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28922.388
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Onion.Core", "Onion.Core\Onion.Core.csproj", "{F19BD7E2-501D-4C02-8656-9FAEACD941EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Onion.Core", "Onion.Core\Onion.Core.csproj", "{F19BD7E2-501D-4C02-8656-9FAEACD941EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Onion.DomainServices", "Onion.DomainServices\Onion.DomainServices.csproj", "{9A63961A-8C43-4C96-B502-BA80B9B71E36}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Onion.DomainServices", "Onion.DomainServices\Onion.DomainServices.csproj", "{9A63961A-8C43-4C96-B502-BA80B9B71E36}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Onion.ApplicationServices", "Onion.ApplicationServices\Onion.ApplicationServices.csproj", "{7A460986-8FB9-4B64-B392-4437312CB308}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Onion.ApplicationServices", "Onion.ApplicationServices\Onion.ApplicationServices.csproj", "{7A460986-8FB9-4B64-B392-4437312CB308}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{15379299-B9D3-4DC4-BF41-6A35851A5CF6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IntegratedServices", "IntegratedServices", "{BD8C1E42-0005-4D8B-B357-3D644DB6403B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Onion.DataStore", "Onion.DataStore\Onion.DataStore.csproj", "{BF5FBD25-43E1-46C7-8B33-54E7847984D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Onion.DataStore", "Onion.DataStore\Onion.DataStore.csproj", "{BF5FBD25-43E1-46C7-8B33-54E7847984D0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{80F44FA3-4E9F-49D9-B182-30F98490D8CF}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Onion.DomainServices.Tests", "Onion.DomainServices.Tests\Onion.DomainServices.Tests.csproj", "{4E208D16-38EA-42E7-8AB8-A1307C58F10D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,12 +45,17 @@ Global
 		{BF5FBD25-43E1-46C7-8B33-54E7847984D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF5FBD25-43E1-46C7-8B33-54E7847984D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF5FBD25-43E1-46C7-8B33-54E7847984D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E208D16-38EA-42E7-8AB8-A1307C58F10D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E208D16-38EA-42E7-8AB8-A1307C58F10D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E208D16-38EA-42E7-8AB8-A1307C58F10D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E208D16-38EA-42E7-8AB8-A1307C58F10D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{BF5FBD25-43E1-46C7-8B33-54E7847984D0} = {BD8C1E42-0005-4D8B-B357-3D644DB6403B}
+		{4E208D16-38EA-42E7-8AB8-A1307C58F10D} = {15379299-B9D3-4DC4-BF41-6A35851A5CF6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EAD47C96-5D2E-4A41-B2F2-C2C8FD6CDA20}

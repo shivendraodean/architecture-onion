@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Onion.ApplicationServices.Fare
+namespace Onion.ApplicationServices.Route
 {
-    class RouteService
+    public class RouteService
     {
     }
 }
