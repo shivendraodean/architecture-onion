@@ -1,6 +1,5 @@
 ﻿using Onion.Core;
 using Onion.DomainServices.Fare;
-using System;
 
 namespace Onion.ApplicationServices.Route
 {
